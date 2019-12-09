@@ -1,3 +1,4 @@
+# yamllint disable rule:line-length
 ---
 services:
   - docker
@@ -11,6 +12,7 @@ deploy:
   api_key:
     secure: "EO7B98JLNrXOzlrjRSpS2XjQV/XZb5l8yhtsSy3/pDyMF3QTlSnLzXSyYZsXAfhyyShUi01cUF4nSnumN0tid10mT0HonhdjGKcqfhJEuCB8QzyYfzU3hEd5ccvbxO2RTwSgLKiGJHGsS3aKd3n0aHc9N1+QpBivi9HEEoE5k/c0kFluv3t1bjrct+orSo0Dc/Ev2gAii+sO8ON0zHGmC6ybshlyU3O7Hk1oE/waRu1vkRrUIyZD7ek6ux9Qp9fy3FN//Bcd7UQBF4jGIP8vBh54yP44xhe5vCXHmK+BwqKfKrjc1ZqawhlZoQiY/uH7EqTtSjU2San1FophVWCchs8L6Rlm569u1fF3vlwrfEiXl7d2sVPdRqDh72C2cpXQ+rIARrwpWRFImY2a7+7eOLOOUyyTJ3ZTGAuC+4DIJjnG2y+wL88KXs0NEc8FNaE+O/MllMZv+444ARK0Jpamm4KPpyjyqcH3AbYh+ByDt07x3yNsQyehsk5LByhhCvhy9Ifg14+JEMQfr45QvLwsO4gG3pQhzXlRCD0jLSXc6SpDe4y/2WzH3O3RnYwd7Ppr0+cdkyT4XI8icuULddhdtsz3tEsy3Y08blmXcmXOAFGu3BxwdxUnvugMRw9Ed9W3QOBOewl6yfjxZRkCcGlhnzs24joPc/54wbaMqdog5bs="
   file: "*.deb"
+  file_glob: true
   skip_cleanup: true
   "on":
     tags: true
