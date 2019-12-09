@@ -3,6 +3,7 @@ services:
   - docker
 
 script:
+  - git submodule update --init --recursive --checkout
   - ./build.sh
 
 deploy:
