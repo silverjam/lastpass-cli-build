@@ -22,7 +22,8 @@ ADD . /work
 
 
 RUN \
-       mkdir build \
+       cd lastpass-cli \
+    && mkdir build \
     && cd build \
     && cmake .. \
     && make -j9 \
